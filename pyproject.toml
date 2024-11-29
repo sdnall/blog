@@ -5,8 +5,25 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "django-tailwind>=3.8.0",
     "django>=5.1.3",
-    "ruff>=0.8.0",
-    "uv>=0.5.5",
     "wagtail>=6.3.1",
+    "environs[django]>=11.2.1",
 ]
+
+[dependency-groups]
+dev = [
+    "django-browser-reload>=1.17.0",
+    "django-debug-toolbar>=4.4.6",
+    "ruff>=0.8.0",
+]
+
+[tool.ruff]
+# Allow lines to be as long as 120 characters.
+line-length = 88
+
+# use the base config/select + isort checks
+extend-select = ["I"]
+
+[tool.ruff.isort]
+known-first-party = ["blog", "home", "search"]

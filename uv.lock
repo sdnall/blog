@@ -48,6 +48,7 @@ dependencies = [
 dev = [
     { name = "django-browser-reload" },
     { name = "django-debug-toolbar" },
+    { name = "honcho" },
     { name = "ruff" },
 ]
 
@@ -65,6 +66,7 @@ requires-dist = [
 dev = [
     { name = "django-browser-reload", specifier = ">=1.17.0" },
     { name = "django-debug-toolbar", specifier = ">=4.4.6" },
+    { name = "honcho", specifier = ">=2.0.0" },
     { name = "ruff", specifier = ">=0.8.0" },
 ]
 
@@ -411,6 +413,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/3f/57/7afdac798dfa0a74ada5805730419a95f7b109b45df08790524749fe01d8/granian-1.6.4-cp313-cp313-musllinux_1_1_aarch64.whl", hash = "sha256:36c911e3c9f22aecbaca16e7091fcf4b8fd3360721eb18e327faf9cfe932fc70", size = 3154122 },
     { url = "https://files.pythonhosted.org/packages/33/3e/ab6729652140676e0ac0a2be22788d554c30da09bb60bf87e2f6a97f66a1/granian-1.6.4-cp313-cp313-musllinux_1_1_x86_64.whl", hash = "sha256:f2759b3c81dddbe6af092091ccdc0dce9e56a3e6953d6a7507cf7272ed1b2a56", size = 3249118 },
     { url = "https://files.pythonhosted.org/packages/92/43/8d5d69e506c9e29131636831a9827de5e27d5c745ee144a3d0b4a22ea12c/granian-1.6.4-cp313-none-win_amd64.whl", hash = "sha256:abc9ccd849bbb7d6243db15779c55eb9a5e7ea8462815e9777cc3afa52720cdf", size = 2147075 },
+]
+
+[[package]]
+name = "honcho"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/65/c8/d860888358bf5c8a6e7d78d1b508b59b0e255afd5655f243b8f65166dafd/honcho-2.0.0.tar.gz", hash = "sha256:af3815c03c634bf67d50f114253ea9fef72ecff26e4fd06b29234789ac5b8b2e", size = 45618 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/48/1c/25631fc359955569e63f5446dbb7022c320edf9846cbe892ee5113433a7e/honcho-2.0.0-py3-none-any.whl", hash = "sha256:56dcd04fc72d362a4befb9303b1a1a812cba5da283526fbc6509be122918ddf3", size = 22093 },
 ]
 
 [[package]]
